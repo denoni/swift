@@ -11,11 +11,6 @@ import CxxStdlib.vector
 
 var StdVectorTestSuite = TestSuite("StdVector")
 
-extension Vector : RandomAccessCollection {
-  public var startIndex: Int { 0 }
-  public var endIndex: Int { size() }
-}
-
 StdVectorTestSuite.test("init") {
     let v = Vector()
     expectEqual(v.size(), 0)
